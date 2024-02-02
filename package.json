@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "lint": {
+  "lint-staged": {
     "*.js": [
       "standard --fix",
       "git add"
@@ -14,7 +14,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint"
+      "pre-commit": "lint-staged"
     }
   },
   "keywords": [],
